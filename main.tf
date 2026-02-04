@@ -123,8 +123,6 @@ resource "aws_msk_configuration" "this" {
     min.insync.replicas       = 2
     log.retention.hours       = 168
   PROPS
-
-  tags = merge(local.tags, { "Name" = "${local.name}-config" })
 }
 
 ###########################################################
